@@ -36,21 +36,14 @@ If the input string fails to commence with the specified pattern indicated by th
 
 Quantifiers play a crucial role in regular expressions as they determine the number of times a specific character or group of characters should be matched. 
 
-`(*)` (asterisk): Matches the preceding pattern zero or more times.
+In the regular expression `([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})`, the following quantifiers are used:
 
-`+`` (plus): Matches the preceding pattern one or more times.
+`+` (plus): It appears after ([a-z0-9_.-]) and ([\da-z.-]), indicating that the preceding character sets should match one or more times.
 
-'?' (question mark): Matches the preceding pattern zero or one time.
+`{2,6}`: It appears after ([a-z.]), specifying that the preceding character set should match at least 2 times and up to 6 times.
 
-'{}' (curly brackets): Provide flexibility to specify specific match limits:
+These quantifiers define the repetition behavior of the respective character sets in the regular expression.
 
-{n} (non negative integer) Matches the preceding pattern exactly n number of times.
+### Grouping Constructs
 
-{n,}: Matches the preceding pattern at least n number of times.
-
-{n, x}: Matches the preceding pattern from a minimum of n number of times to a maximum of x number of times.
-
-
-
-
-
+Grouping constructs in regular expressions, represented by parentheses (), serve multiple purposes. They allow for capturing groups, enabling extraction or referencing of matched content. They facilitate logical groupings and alternation using the | character. Quantifiers can be applied to groups to specify the number of repetitions. Additionally, grouping constructs can modify the behavior of the contained subpattern, such as creating non-capturing groups. Overall, these constructs provide flexibility and control, allowing for the grouping of characters or subpatterns as a single unit in regular expressions.
