@@ -122,5 +122,5 @@ Bryan Seng
 
 Thank you
 End.        
-<img src="/images/business-cat1.jpg.jpg" width=15%>
+<img src="/images/business-cat1.jpg" width=15%>
 
