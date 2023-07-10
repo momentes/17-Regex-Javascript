@@ -90,6 +90,7 @@ In the regular expression `([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})`, character
 By using character classes, the regular expression defines the allowed characters for different portions of the email pattern, providing a flexible and precise matching mechanism.
 
 ### Character Escapes
+
 Character escape in regular expressions is a mechanism that allows special characters to be interpreted literally rather than having their special meaning, ensuring that they are matched as normal characters within the pattern.
 
 In the regular expression `([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})`, character escapes are not explicitly used. However, character escapes in regular expressions typically involve the backslash \ followed by a special character to be escaped.
@@ -99,3 +100,27 @@ In the context of email validation, character escapes might be used to match spe
 In the given regular expression, since the characters [a-z0-9_.-], [\da-z.-], and [a-z.] do not include any special characters that require escaping, character escapes are not necessary.
 
 ### Flags
+
+Flags in regular expressions are additional parameters that modify the behavior of pattern matching. They provide extra control and options for regex matching operations. Flags are typically represented as single characters, such as "i", "g", "m", and so on. Each flag serves a specific purpose, such as case-insensitive matching, global matching, multiline matching, and more. By using flags, regex patterns can be customized to meet specific requirements, enabling more versatile and powerful text matching capabilities.
+
+In the regular expression `([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})`, there are no explicit regex flags used. However, flags can be added to modify the behavior of the regular expression.
+
+Some commonly used flags in regular expressions include:
+
+* `"i"` flag: Enables case-insensitive matching. For example, /pattern/i would match both uppercase and lowercase characters.
+
+* `"g"` flag: Enables global matching, searching for multiple occurrences of the pattern within the input string.
+
+* `"m"` flag: Enables multiline matching, allowing the pattern to match across multiple lines.
+
+In the given regular expression, if we were to add the "i" flag (/pattern/i), it would allow case-insensitive matching for the email pattern. This means that both uppercase and lowercase letters would be considered valid within the email address. However, without any explicit flags in the provided regular expression, the pattern matching will default to its default behavior based on the regex engine being used.
+
+## Author
+
+Bryan Seng
+**Github** : https://github.com/momentes/17-Regex-Tutorial
+
+Thank you
+End.        
+<img src="/images/business-cat1.jpg.jpg" width=15%>
+
