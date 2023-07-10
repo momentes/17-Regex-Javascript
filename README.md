@@ -28,7 +28,7 @@ Within this regular expression, there are two distinct anchors: ^ and $.
 
 The ^ anchor is employed to identify and match the commencement of a line or string, while the $ anchor is utilized to locate and match the conclusion of a line or string, taking into consideration the characters that precede it. In the context of this particular regular expression, these anchors are strategically employed to ensure that the entire string aligns with the specified pattern.
 
-In the context of the "Matching an Email" regex, it is imperative that the string commences and concludes with a segment that satisfies the specified pattern ([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6}). The regular expression does not incorporate the quantifier {2,6} preceding the $ character. The omission of this component is intentional, as it pertains to a specialized element known as a quantifier. 
+In the context of the "Matching an Email" regex, it is imperative that the string commences and concludes with a segment that satisfies the specified pattern `([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})`. The regular expression does not incorporate the quantifier {2,6} preceding the $ character. The omission of this component is intentional, as it pertains to a specialized element known as a quantifier. 
 
 If the input string fails to commence with the specified pattern indicated by the regular expression or does not conclude with the pattern, the regular expression will not yield a match. In order for a successful match to occur, it is essential for the input string to strictly adhere to the prescribed pattern from its beginning to its end
 
@@ -36,9 +36,9 @@ If the input string fails to commence with the specified pattern indicated by th
 
 Quantifiers play a crucial role in regular expressions as they determine the number of times a specific character or group of characters should be matched. 
 
-'*' (asterisk): Matches the preceding pattern zero or more times.
+`(*)` (asterisk): Matches the preceding pattern zero or more times.
 
-'+' (plus): Matches the preceding pattern one or more times.
+`+`` (plus): Matches the preceding pattern one or more times.
 
 '?' (question mark): Matches the preceding pattern zero or one time.
 
