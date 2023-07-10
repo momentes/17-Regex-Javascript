@@ -37,12 +37,17 @@ If the input string fails to commence with the specified pattern indicated by th
 Quantifiers play a crucial role in regular expressions as they determine the number of times a specific character or group of characters should be matched. 
 
 '*' (asterisk): Matches the preceding pattern zero or more times.
+
 '+' (plus): Matches the preceding pattern one or more times.
+
 '?' (question mark): Matches the preceding pattern zero or one time.
+
 '{}' (curly brackets): Provide flexibility to specify specific match limits:
 
 {n} (non negative integer) Matches the preceding pattern exactly n number of times.
+
 {n,}: Matches the preceding pattern at least n number of times.
+
 {n, x}: Matches the preceding pattern from a minimum of n number of times to a maximum of x number of times.
 
 
