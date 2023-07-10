@@ -119,7 +119,7 @@ In the given regular expression, if we were to add the "i" flag (/pattern/i), it
 
 Bryan Seng
 
-**Github** : https://github.com/momentes/17-Regex-Tutorial
+**Repo Link** : https://github.com/momentes/17-Regex-Tutorial
 
 Thank you
 End.        
